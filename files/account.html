@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>eichbar</title>
+		<link rel="stylesheet" href="./css/eichbar.css">
+	</head>
+	<body>
+		<div id="page">
+			<div id="header" class="site-header">
+				<div class="wrap">
+
+					<div id="branding" role="banner">
+						<p class="site-title"><a href="http://example.com">Site Title</a></p>
+						<p class="site-description">Just another WordPress site...</p>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="main">
+				<div class="wrap">
+
+					<div id="primary">
+						<div id="content" role="main">
+							<p>Article content...</p>
+						</div>
+					</div>
+
+					<div id="secondary">
+						<div class="widget">
+							<p>Main sidebar content...</p>
+						</div><!--.widget-->
+					</div>
+
+					<div id="tertiary">
+						<div class="widget">
+							<p>Additional sidebar content...</p>
+						</div><!--.widget-->
+					</div>
+
+				</div>
+			</div>
+
+			<div id="footer" class="site-footer">
+				<div class="wrap">
+
+					<p class="site-credits">© Copyright owner</p>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script src="./jquery/jquery.js"></script>
+	<script>
+		try {
+			window.$ = window.jQuery = require("libs/jquery-1.10.2.js");
+			// If you want module.exports to be empty, uncomment:
+			// module.exports = {};
+		} catch(e) {}
+	</script>
+	<script src="./js/main.js"></script>
+	<script>
+		// You can also require other files to run in this process
+		require('./renderer.js')
+	</script>
+</html>

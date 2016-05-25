@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>eichbar</title>
+		<link rel="stylesheet" href="./css/eichbar.css">
+	</head>
+	<body>
+		<div id="outer">
+			<div id="inner">
+				<h1>eichbar</h1>
+				<input class="login" type="text" placeholder="username"/>
+				<input class="login" type="password" placeholder="*******"/>
+				<div id="login-btn">
+					<button class="btn" onclick="next('account.html')" >Login</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./jquery/jquery.js"></script>
+	<script>
+		try {
+			window.$ = window.jQuery = require("libs/jquery-1.10.2.js");
+			// If you want module.exports to be empty, uncomment:
+			// module.exports = {};
+		} catch(e) {}
+	</script>
+	<script src="./js/main.js"></script>
+	<script>
+		// You can also require other files to run in this process
+		require('./renderer.js')
+	</script>
+</html>
